@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Introduction to objects in Javascript </title>
+</head>
+<body>
+<h2>Arguments in objects h.w</h2>
+<p id="result"></p>
+<script>
+    function findMax(){
+
+        var max=15;
+        for(i=0;i<arguments.length;i++){
+            if(arguments[i]>max){
+                max=arguments[i];
+            }
+            }
+        return max;
+                     }
+document.getElementById("result").innerHTML=findMax(10,43,63,39,57)
+</script>
+</body>
+</html>
